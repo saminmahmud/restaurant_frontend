@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="" />
+
+    <title>Yumfy</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!--owl slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- nice select  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+      integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+      crossorigin="anonymous"
+    />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+      /* body {
+        margin: 0;
+        padding: 0;
+        font-family: Roboto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: linear-gradient(120deg, #007bff, #d0314c);
+        height: 100vh;
+        overflow: hidden;
+      } */
+
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 29vw;
+        background: white;
+        border-radius: 10px;
+      }
+
+      .center h1 {
+        text-align: center;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid silver;
+      }
+
+      .center form {
+        padding: 0 40px;
+        box-sizing: border-box;
+      }
+
+      form .txt_field {
+        position: relative;
+        border-bottom: 2px solid #adadad;
+        margin: 30px 0;
+      }
+
+      .txt_field input {
+        width: 100%;
+        padding: 0 5px;
+        height: 40px;
+        font-size: 16px;
+        border: none;
+        background: none;
+        outline: none;
+      }
+
+      .txt_field label {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        color: #adadad;
+        transform: translateY(-50%);
+        font-size: 16px;
+        pointer-events: none;
+      }
+
+      .txt_field span::before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 0px;
+        height: 2px;
+        background: #2691d9;
+        transition: 0.5s;
+      }
+
+      .txt_field input:focus ~ label,
+      .txt_field input:valid ~ label {
+        top: -5px;
+        color: #2691d9;
+      }
+
+      .txt_field input:focus ~ span::before,
+      .txt_field input:valid ~ span::before {
+        width: 100%;
+      }
+
+      .pass {
+        margin: -5px 0 20px 5px;
+        color: #a6a6a6;
+        cursor: pointer;
+      }
+
+      .pass:hover {
+        text-decoration: underline;
+      }
+
+      input[type="Submit"] {
+        width: 100%;
+        height: 50px;
+        border: 1px solid;
+        border-radius: 25px;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      input[type="Submit"]:hover {
+        background: #2691d9;
+        color: #e9f4fb;
+        transition: 0.5s;
+      }
+
+      .signup_link {
+        margin: 30px 0;
+        text-align: center;
+        font-size: 16px;
+        color: #666666;
+      }
+
+      .signup_link a {
+        color: #2691d9;
+        text-decoration: none;
+      }
+
+      .signup_link a:hover {
+        text-decoration: underline;
+      }
+
+      .HomeAbout {
+        width: 100vw;
+        height: 25vh;
+      }
+    </style>
+  </head>
+
+  <body class="sub_page" style="background: linear-gradient(120deg, #007bff, #d0314c);background-size: cover;font-family: Roboto;background-repeat: no-repeat;">
+    <div class="hero_area">
+      <div class="bg-box">
+        <img src="images/hero-bg.jpg" alt="" />
+      </div>
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span> Yumfy </span>
+            </a>
+  
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="menu.html"
+                    >Menu <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    style="display: none"
+                    id="addfood"
+                    class="nav-link"
+                    href="addfood.html"
+                    >Add Food</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    style="display: none"
+                    id="orders"
+                    class="nav-link"
+                    href="order.html"
+                    >Orders</a
+                  >
+                </li>
+              </ul>
+              <div class="user_option">
+                <a href="login.html" id="login" class="user_link">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+                <a
+                  style="color: yellow; cursor: pointer; display: none"
+                  id="logoutButton"
+                  class="user_link"
+                >
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </a>
+                <a id="cartbtn" class="cart_link" href="cart.html">
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 456.029 456.029"
+                    style="enable-background: new 0 0 456.029 456.029"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                   C457.728,97.71,450.56,86.958,439.296,84.91z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z"
+                        />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                  <div
+                    style="color: rgb(177, 215, 64); font-weight: bolder"
+                    id="cartno"
+                  >
+                    0
+                  </div>
+                </a>
+                <!-- <form class="form-inline">
+                  <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <!-- login section -->
+    <section>
+
+
+      <!-- <div class="heading_container heading_center">
+        <h2>Login</h2>
+      </div> -->
+      <br />
+
+      <div class="container" >
+        <div class="center" style="margin-top: 90px">
+          <h1>Signup</h1>
+          <form action=""  onsubmit="handleRegistration(event)">
+            <p id="error" class="text-danger"></p>
+            <div class="txt_field">
+              <input id="username" type="text" name="text" required />
+              <span></span>
+              <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input id="first_name" type="text" name="text" required />
+                <span></span>
+                <label>First Name</label>
+            </div>
+            <div class="txt_field">
+                <input id="last_name" type="text" name="text" required />
+                <span></span>
+                <label>Last Name</label>
+            </div>
+            <div class="txt_field">
+                <input id="email" type="email" name="email" required />
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+              <input id="password" type="password" name="password" required />
+              <span></span>
+              <label>Password</label>
+            </div>
+            <div class="txt_field">
+                <input id="confirm_password" type="password" name="password" required />
+                <span></span>
+                <label>Confirm Password</label>
+            </div>
+            <!-- <div class="pass">Forget Password?</div> -->
+            <input name="submit" type="Submit" value="Signup" />
+            <div class="signup_link">
+              Already Have Account ? <a href="login.html">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end food section -->
+
+    <!-- footer section -->
+    <footer class="footer_section" style="margin-top: 800px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <div class="footer_contact">
+              <h4>
+                Contact Us
+              </h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    Location
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Call +8801822048746
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    yumfy@gmail.com
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <div class="footer_detail">
+              <a href="" class="footer-logo">
+                Yumfy
+              </a>
+              <p>
+                Indulge in the delightful flavors at Yumfy, where every dish tells a story of culinary craftsmanship. Our chefs blend passion and creativity to craft dishes that tantalize your taste buds and leave you craving for more.
+              </p>
+              <div class="footer_social">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-pinterest" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <h4>
+              Opening Hours
+            </h4>
+            <p>
+              Everyday
+            </p>
+            <p>
+              10.00 Am -10.00 Pm
+            </p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By Samin Mahmud
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+
+    <script src="js/signup.js"></script>
+    <script src="cart.js"></script>
+    <script src="js/login.js"></script>
+    <script src="menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </body>
+</html>
